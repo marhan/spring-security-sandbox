@@ -4,3 +4,7 @@ server:
 security:
   user:
     password: password
+spring:
+  resources:
+    chain:
+      enabled: true
