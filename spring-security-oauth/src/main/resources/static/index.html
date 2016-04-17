@@ -7,9 +7,9 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width"/>
     <base href="/"/>
-    <link rel="stylesheet" type="text/css" href="/ui/webjars/bootstrap/css/bootstrap.min.css"/>
-    <script type="text/javascript" src="/ui/webjars/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/ui/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
     <style type="text/css">
         [ng\:cloak], [ng-cloak], .ng-cloak {
             display: none !important;
@@ -17,15 +17,17 @@
     </style>
 </head>
 
-<body ng-app="hello">
-<div class="container">
-    <h1>Greeting</h1>
-    <div ng-controller="home as home" ng-cloak class="ng-cloak">
-        <p>The ID is {{home.greeting.id}}</p>
-        <p>The content is {{home.greeting.content}}</p>
-    </div>
+<body ng-app="hello" ng-cloak class="ng-cloak">
+<div ng-controller="navigation as nav" class="container">
+    <ul class="nav nav-pills" role="tablist">
+        <li class="active"><a href="#/">home</a></li>
+        <li><a href="#/login">login</a></li>
+        <li ng-show="authenticated"><a href="" ng-click="nav.logout()">logout</a></li>
+    </ul>
 </div>
-<script type="text/javascript" src="/ui/webjars/angular/angular.js"></script>
-<script type="text/javascript" src="/ui/js/hello.js"></script>
+<div ng-view class="container"></div>
+<script type="text/javascript" src="/webjars/angular/angular.js"></script>
+<script type="text/javascript" src="/webjars/angular/angular-route.js"></script>
+<script type="text/javascript" src="/js/hello.js"></script>
 </body>
 </html>
