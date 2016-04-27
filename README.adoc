@@ -1,11 +1,5 @@
-# Spring Security Sandbox
+= Spring Security Sandbox
 
-## Projects
+Bootstrap UI and JWT Tokens for the Authorization Server
 
-### spring-security-oauth
-
-Simple implementation of an secured web app with OAuth2
-
-#### Specific dependencies
-
-- http://www.webjars.org/[webjars] for web resources
+Based upon GitHub project https://github.com/dsyer/spring-security-angular/tree/master/oauth2-vanilla[spring-security-angular]
