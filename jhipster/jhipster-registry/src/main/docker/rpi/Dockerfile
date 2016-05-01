@@ -1,9 +1,9 @@
 FROM marhan/rpi-java8:latest
 
 # add jhipster-registry source
-ADD ../../../../pom.xml mvnw /code/
-ADD ../../../ /code/src
-ADD ../../../../.mvn /code/.mvn
+ADD pom.xml mvnw /code/
+ADD src /code/src
+ADD .mvn /code/.mvn
 RUN chmod +x /code/mvnw
 
 # package the application and delete all lib
