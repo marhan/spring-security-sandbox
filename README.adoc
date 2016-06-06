@@ -7,5 +7,10 @@ Bootstrap UI and JWT Tokens for the Authorization Server
 
 Based upon GitHub project https://github.com/spring-guides/tut-spring-security-and-angular-js/tree/master/oauth2[spring-security-angular]
 
+=== Hyperlinks
+
+https://jwt.io/[JWT]
+
+
 
 == JHipster
