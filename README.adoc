@@ -7,10 +7,22 @@ Bootstrap UI and JWT Tokens for the Authorization Server
 
 Based upon GitHub project https://github.com/spring-guides/tut-spring-security-and-angular-js/tree/master/oauth2[spring-security-angular]
 
+== Workflow
+
+
+
+=== Call protected resource
+
+==== Example Request
+
+curl --header "Authorization: Bearer TOKEN" http://localhost:9000/resource/
+
+==== Example Response
+
+{"id":"c2292f65-0f05-49bb-89dd-5a91e6b6bad4","content":"Hello World"}
+
 === Hyperlinks
 
 https://jwt.io/[JWT]
-
-
 
 == JHipster
